@@ -249,7 +249,7 @@ IDXGISwapChain1 * create_swap_chain(HWND wnd_handle, ID3D12CommandQueue * cmd_qu
     swap_chain_desc1.Scaling = DXGI_SCALING_NONE;
     swap_chain_desc1.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT;
     swap_chain_desc1.BufferCount = num_swap_buffers;
-    swap_chain_desc1.SwapEffect = DXGI_SWAP_EFFECT_DISCARD;
+    swap_chain_desc1.SwapEffect = DXGI_SWAP_EFFECT_FLIP_DISCARD;
     swap_chain_desc1.SampleDesc.Count = 1;
     swap_chain_desc1.Format = DXGI_FORMAT_R8G8B8A8_UNORM;
 
